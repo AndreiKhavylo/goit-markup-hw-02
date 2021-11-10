@@ -237,3 +237,39 @@ body {
 .footer-tell:focus {
   color: var(--accent-color);
 }
+
+/*----------------------------------PORTFOLIO---------------------------------*/
+
+.portfolio {
+  display: none;
+}
+
+.portfolio-btm {
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--first-text-color);
+}
+.portfolio-btm:hover,
+.portfolio-btm:focus {
+  color: var(--accent-color);
+}
+
+.portfolio-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--first-text-color);
+}
+
+.portfolio-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+  color: var(--second-text-color);
+}
