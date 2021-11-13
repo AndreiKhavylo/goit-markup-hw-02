@@ -8,11 +8,14 @@
   --third-text-color: rgba(255, 255, 255, 0.6);
   --fourth-text-color: #ffffff;
   --button-color: #ffffff;
+  --second-button-color: #212121;
   --accent-color: #2196f3;
 }
 
 body {
   font-family: "Roboto", sans-serif;
+  color: var(--first-text-color);
+  background-color: #ffffff;
 }
 
 .list {
@@ -38,6 +41,15 @@ body {
 
 /*-----------------------------HEADER----------------------------------*/
 
+.header-logo {
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--second-logo-color);
+}
+
 .header-logo-one {
   font-family: Raleway;
   font-style: normal;
@@ -48,13 +60,8 @@ body {
   color: var(--accent-color);
 }
 
-.header-logo-too {
-  font-family: Raleway;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  color: var(--second-logo-color);
+.current {
+  color: var(--accent-color);
 }
 
 .header-link {
@@ -64,9 +71,7 @@ body {
   letter-spacing: 0.02em;
   color: var(--first-text-color);
 }
-
-.header-link:hover,
-.header-link:focus {
+.current {
   color: var(--accent-color);
 }
 
@@ -78,11 +83,6 @@ body {
   color: var(--second-text-color);
 }
 
-.header-mail:hover,
-.header-mail:focus {
-  color: var(--accent-color);
-}
-
 .header-tell {
   font-weight: 500;
   font-size: 14px;
@@ -92,12 +92,33 @@ body {
 }
 
 .header-tell:hover,
-.header-tell:focus {
+.header-mail:hover,
+.header-link:hover,
+.hero-btn:hover,
+.footer-adress:hover,
+.footer-tell:hover,
+.footer-mail:hover,
+.header-tell:focus,
+.header-mail:focus,
+.header-link:focus,
+.footer-adress:focus,
+.footer-tell:focus,
+.footer-mail:focus,
+.footer-btn:focus {
   color: var(--accent-color);
+}
+
+.portfolio-btn:hover,
+.portfolio-btn:focus {
+  color: var(--button-color);
+  background-color: var(--accent-color);
 }
 
 /*-------------------------Heroo------------------------------------------*/
 
+.hero {
+  background: #2f303a;
+}
 .hero-title {
   font-weight: 900;
   font-size: 44px;
@@ -107,20 +128,21 @@ body {
   color: var(--main-title-color);
 }
 
-.hero-btm {
+.hero-btn {
   cursor: pointer;
+  border-radius: 4px;
+  font-family: Roboto;
+  font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
-  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  text-align: center;
   letter-spacing: 0.06em;
   color: var(--button-color);
 }
 
-.hero-btm:hover,
-.hero-btm:focus {
-  color: var(--accent-color);
-}
 /*----------------------------------SPECIALS---------------------------------*/
 
 .specials {
@@ -144,7 +166,7 @@ body {
 
 /*----------------------------------OUR_WORK---------------------------------*/
 
-.our-work {
+.our-work-title {
   font-weight: bold;
   font-size: 36px;
   line-height: 1.17;
@@ -153,7 +175,16 @@ body {
 }
 
 /*----------------------------------COMMAND---------------------------------*/
+
 .command {
+  background: #f5f4fa;
+}
+
+.command-item {
+  background: #ffffff;
+}
+
+.command-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -161,7 +192,7 @@ body {
   color: var(--second-title-color);
 }
 
-.command-title {
+.command-title-person {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -179,6 +210,20 @@ body {
 
 /*----------------------------------FOOTER---------------------------------*/
 
+footer {
+  background: #2f303a;
+}
+
+.footer-logo {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--first-logo-color);
+}
+
 .footer-logo-one {
   font-family: Raleway;
   font-style: normal;
@@ -189,16 +234,6 @@ body {
   color: var(--accent-color);
 }
 
-.footer-logo-too {
-  font-family: Raleway;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  color: var(--first-logo-color);
-}
-
 .footer-adress {
   font-weight: 400;
   font-size: 14px;
@@ -207,35 +242,22 @@ body {
   color: var(--fourth-text-color);
 }
 
-.footer-adress,
-.footer-adress {
-  color: var(--accent-color);
-}
-
 .footer-mail {
   font-weight: 400;
+  font-style: normal;
   font-size: 14px;
   line-height: 1;
   letter-spacing: 0.02em;
   color: var(--third-text-color);
 }
 
-.footer-mail:hover,
-.footer-mail:focus {
-  color: var(--accent-color);
-}
-
 .footer-tell {
   font-weight: 400;
+  font-style: normal;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.02em;
   color: var(--third-text-color);
-}
-
-.footer-tell:hover,
-.footer-tell:focus {
-  color: var(--accent-color);
 }
 
 /*----------------------------------PORTFOLIO---------------------------------*/
@@ -246,16 +268,15 @@ body {
 
 .portfolio-btm {
   cursor: pointer;
+  border-radius: 4px;
+  font-family: Roboto;
+  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
   text-align: center;
   letter-spacing: 0.03em;
-  color: var(--first-text-color);
-}
-.portfolio-btm:hover,
-.portfolio-btm:focus {
-  color: var(--accent-color);
+  color: var(--second-button-color);
 }
 
 .portfolio-title {
