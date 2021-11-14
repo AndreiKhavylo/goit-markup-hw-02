@@ -94,7 +94,6 @@ body {
 .header-tell:hover,
 .header-mail:hover,
 .header-link:hover,
-.hero-btn:hover,
 .footer-adress:hover,
 .footer-tell:hover,
 .footer-mail:hover,
@@ -103,8 +102,7 @@ body {
 .header-link:focus,
 .footer-adress:focus,
 .footer-tell:focus,
-.footer-mail:focus,
-.footer-btn:focus {
+.footer-mail:focus {
   color: var(--accent-color);
 }
 
@@ -131,6 +129,7 @@ body {
 .hero-btn {
   cursor: pointer;
   border-radius: 4px;
+  border: none;
   font-family: Roboto;
   font-style: normal;
   font-weight: 700;
@@ -141,6 +140,7 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   color: var(--button-color);
+  background-color: var(--accent-color);
 }
 
 /*----------------------------------SPECIALS---------------------------------*/
@@ -236,6 +236,7 @@ footer {
 
 .footer-adress {
   font-weight: 400;
+  font-style: normal;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -246,7 +247,7 @@ footer {
   font-weight: 400;
   font-style: normal;
   font-size: 14px;
-  line-height: 1;
+  line-height: 1.71;
   letter-spacing: 0.02em;
   color: var(--third-text-color);
 }
@@ -266,9 +267,10 @@ footer {
   display: none;
 }
 
-.portfolio-btm {
+.portfolio-btn {
   cursor: pointer;
   border-radius: 4px;
+  border: none;
   font-family: Roboto;
   font-style: normal;
   font-weight: 500;
